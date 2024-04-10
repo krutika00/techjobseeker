@@ -76,6 +76,8 @@ export default function AddJob(props) {
                   Techincal and Hardware
                 </option>
                 <option value="Front Desk">Front Desk</option>
+                <option value="Techer">Techer</option>
+                <option value="staff">staff</option>
               </SelectInput>
               <TextField label="Start date " name="startDate" type="date" />
               <TextField label="  End date " name="endDate" type="date" />

@@ -142,6 +142,14 @@ function Reports() {
       key: "title",
     },
     {
+      label: "Description",
+      key: "description",
+    },
+    {
+      label: "Category",
+      key: "category",
+    },
+    {
       label: "StartDate",
       key: "startDate",
     },
@@ -238,8 +246,8 @@ function Reports() {
           <Table striped hover>
             <thead>
               <tr className={classes.tableHeader}>
-                {/* <th>JobId</th>
-                <th>providerId</th> */}
+               
+                 <th>providerId</th>   
                 <th>Title</th>
                 <th>description</th>
                 <th>Category</th>
@@ -250,6 +258,8 @@ function Reports() {
             <tbody className={classes.tableBody}>
               {slice.map((contact) => (
                 <tr key={contact._id}>
+                 
+                  <td>{contact.providerId}</td>
                   <td>{contact.title}</td>
                   <td>{contact.description}</td>
                   <td>{contact.category}</td>

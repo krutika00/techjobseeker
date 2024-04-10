@@ -7,7 +7,7 @@ const Udashboard = () => {
     <div>
       <Navbar1 />
       <br />
-      <h1>Nivetha Cards</h1>
+      <h1>Job Cards</h1>
       {/* <CountCard /> */}
       <br />
       <Table1 />

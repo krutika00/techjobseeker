@@ -75,7 +75,7 @@ const Jobs = () => {
           job={jobSet}
           onOpen={modal}
           onClose={closeModalHandler}
-          changes={setAction}
+          changes={setAction} 
         />
       )}
     </div>

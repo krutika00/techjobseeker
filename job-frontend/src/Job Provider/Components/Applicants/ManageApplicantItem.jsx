@@ -46,6 +46,26 @@ const ApplicantItem = ({ setAction, ...props }) => {
         console.log(err);
       });
   };
+  const acceptCandidateHandler = () => {
+    axios
+      .patch(
+        `${
+          Config.SERVER_URL + "provider/applicants/accept/" + applicantItemId
+        }`,
+        {},
+        {
+          headers: {
+            Authorization: "Bearer " + token,
+          },
+        }
+      )
+      .then((res) => {
+        setAction((prev) => !prev);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  };
   const viewResumeHandler = () => {
     axios
       .get(
@@ -91,6 +111,16 @@ const ApplicantItem = ({ setAction, ...props }) => {
           </span>
           <span>Shortlist</span>
         </button>
+        {/* <button
+          className={`${classes.AcceptedCandidate} ${classes.button}`}
+          onClick={acceptCandidateHandler}
+          disabled={props.applicantItem.status === "Accepted" ? true : false}
+        >
+          <span>
+            <i className="bi bi-person-check-fill"></i>
+          </span>
+          <span>Accepted</span>
+        </button>  */}
 
         <button
           className={`${classes.rejectCandidate} ${classes.button}`}

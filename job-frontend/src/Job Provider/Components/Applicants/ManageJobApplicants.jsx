@@ -80,8 +80,8 @@ const ManageJobApplicants = () => {
             <Table striped hover>
               <thead>
                 <tr className={classes.tableHeader}>
-                  {/* <th>User Id</th> */}
-                  <th>Job Title</th>
+                   <th>UserName</th>  
+                  {/* <th>Job Title</th> */}
                   <th>Resume</th>
                   <th>Actions</th>
                 </tr>

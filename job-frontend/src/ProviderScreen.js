@@ -2,6 +2,8 @@ import { Routes, Route, Navigate } from "react-router-dom";
 import React, { Suspense } from "react";
 import SpinnerComponent from "./components/UI/SpinnerComponent";
 import Layout from "./components/layout/Layout";
+// import EmailPage from "./Job Provider/Components/Applicants/EmailPage";
+// import MyForm from "./Job Provider/Components/Applicants/MyForm";
 // import ProvDashboard from "./pages/ProviderPages/ProvDashboard";
 // import ApplicantsPage from "./pages/ProviderPages/ApplicantPage";
 
@@ -22,6 +24,8 @@ const ManageApplicantPage = React.lazy(() =>
 const ViewShortlistedPage = React.lazy(() =>
   import("./pages/ProviderPages/ViewShortlistedPage")
 );
+
+ 
 const ReportPage = React.lazy(() => import("./pages/ProviderPages/ReportPage"));
 const Changepassword = React.lazy(() =>
   import("./components/UI/ChangePassword")
@@ -54,6 +58,14 @@ export default function ProviderScreen() {
             path="/view-shortlists/:jobId"
             element={<ViewShortlistedPage />}
           />
+          
+          
+          {/* <Route exact path="/view-shortlists/:jobId" element={<EmailPage />} /> */}
+             {/* <Route
+            exact
+            path="/view-shortlists/:jobId"
+            element={<MyForm />}
+          />   */}
 
           <Route exact path="provider-report" element={<ReportPage />} />
 

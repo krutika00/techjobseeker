@@ -7,13 +7,33 @@ const authRoutes = require("./routes/auth");
 const adminRoutes = require("./routes/admin");
 const providerRoutes = require("./routes/provider");
 const userRoutes = require("./routes/user");
+const emailRoutes = require("./routes/emailRoutes");
+const emailRoutes1 = require("./routes/emailRoutes1");
+const dotenv= require("dotenv");
 
 const app = express();
 
-const userName = "praveenterax";
-const password = "NblCRcF6hjo1BC3s";
+dotenv.config();
 
-const MONGO_URI = `mongodb+srv://${userName}:${password}@cluster0.tbhhh.mongodb.net/jobPortal?retryWrites=true&w=majority`;
+const cors = require("cors");
+const corsOptions = {
+  origin: "*",
+  credentials: true, //access-control-allow-credentials:true
+  optionSuccessStatus: 200,
+};
+
+app.use(cors()); // Use this after the variable declaration
+
+app.use(express.json()); // tell the server to accept the json data from frontend
+
+//Signup and login
+app.use("/email", emailRoutes);
+app.use('/email1', emailRoutes1);
+app.get("/", (req, res) => {
+  res.send("Hello World!");
+});
+
+const MONGO_URI = `mongodb://localhost:27017/jobpro`;
 
 app.use(bodyParser.json());
 

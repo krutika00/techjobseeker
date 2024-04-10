@@ -120,6 +120,7 @@ const Register = (props) => {
                         label="Name"
                         id="name"
                         name="name"
+                        placeholder="Enter Name"
                         mandatory={"true"}
                       />
                     </div>
@@ -128,6 +129,7 @@ const Register = (props) => {
                         label="Email"
                         id="email"
                         name="email"
+                        placeholder="Enter Email"
                         mandatory={"true"}
                       />
                     </div>
@@ -137,6 +139,7 @@ const Register = (props) => {
                         id="password"
                         type="password"
                         name="password"
+                        placeholder="Enter Password"
                         mandatory={"true"}
                       />
                     </div>
@@ -145,6 +148,7 @@ const Register = (props) => {
                         label="Mobile No"
                         id="mobile"
                         name="mobile"
+                        placeholder="Enter Mobile No"
                         mandatory={"true"}
                       />
                     </div>
@@ -156,6 +160,7 @@ const Register = (props) => {
                           label="Age"
                           name="age"
                           id="age"
+                          placeholder="Enter Age"
                           mandatory={"true"}
                         />
                       </div>
@@ -219,7 +224,7 @@ const Register = (props) => {
                     </div>
                     <div className={classes.formInputs}>
                       <SelectInput name="role" id="role" label="Role">
-                        <option value="User">User</option>
+                        <option value="User">Job Seeker</option>
                         <option value="Job Provider">Job Provider</option>
                       </SelectInput>
                     </div>

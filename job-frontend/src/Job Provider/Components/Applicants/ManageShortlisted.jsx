@@ -85,6 +85,9 @@ const ManageShortlisted = () => {
                   <th>Username</th>
                   <th>Email</th>
                   <th>Resume</th>
+                  <th>Enter Message</th>
+                  <th>Sent</th>
+                 
                 </tr>
               </thead>
               <tbody className={classes.tableBody}>

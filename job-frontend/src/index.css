@@ -1,10 +1,16 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
 
+.app {
+  display: flex;
+  flex-wrap: wrap;
+
+}
 body {
   margin: 0;
   /* background-color: #f3f3f3; */
   /* background-color: rgb(240, 242, 245); */
-  background-color: #e4eaec;
+
+  background-image: linear-gradient(0deg, #00dbdb15 0%,  #e4eaec 100%);
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
@@ -47,4 +53,45 @@ code {
   margin: auto auto;
   top: 35vh;
   left: 42vw;
+}
+.footer {
+  color: white;
+  padding: 10px;
+  margin-top: auto;
+  margin-bottom: auto;
+  
+
+
+  
+ 
+  background: #000000; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #703e3e,
+    #000000
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #268a8a, #4866a7);
+}
+
+.footer a {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+}
+
+.footer a:hover {
+  color: #ffefba;
+  border-bottom: 1px solid #ffefba;
+}
+.header-login-1
+{
+  background: linear-gradient(to left, #268a8a, #4866a7);
+}
+
+.nav {
+  min-height: 75px;
+  letter-spacing: 4px;
+  padding: auto;
+ 
+  background: linear-gradient(to right, #268a8a, #4866a7);
 }

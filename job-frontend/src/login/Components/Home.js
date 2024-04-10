@@ -7,7 +7,7 @@ import Header from "./Header";
 import classes from "./Register.module.css";
 import Config from "../../config/Config.json";
 
-const Login = () => {
+const Home = () => {
   const [inputs, setInputs] = useState({ email: "", password: "" });
   const [errors, setErrors] = useState({});
   const [backendErrors, setBackendErrors] = useState({
@@ -95,26 +95,21 @@ const Login = () => {
   return (
     <React.Fragment>
       <Header />
-      <Container className="mb-5">
-        <Row>
-          <Col lg={5} md={10} className="mb-5">
-          <h1 className="p-3 text-center rounded" style={{ color: "#2c49ed" }}>
-          <img
-              src="./images/jobbg.png"
-              className="img-fluid"
-              alt="About"
-            />  
-            
+      
+      <div className="container mt-5">
+        <div className="row">
+          <div className="col-lg-5 mx-auto">
+            <h1 className="p-3 text-center rounded" style={{ color: "#2c49ed" }}>
+              <img src="./images/jobbg.png" className="img-fluid" alt="About" />
             </h1>
-            <p>A job portal is an online place where various companies post 
-              their job vacancies so that the associated users can apply for them. 
-              These portals are very useful for job seekers and help them to choose jobs of their convictions.</p>
-           
-          </Col>
-          <Col lg={6} md={12}>
+            <p>A job portal is an online place where various companies post their job vacancies so that the associated users can apply for them. These portals are very useful for job seekers and help them to choose jobs of their convictions.</p>
+          </div>
+          <div className={`col-lg-5 mx-auto ${classes.loginContainer}`}>
             <h1 className="p-3 text-center rounded" style={{ color: "#2c49ed" }}>
               Login to Tech Job Portal
             </h1>
+            
+               
             <div className={`${classes.formContainer} p-5 m-auto shadow-sm rounded-lg`}>
               {backendErrors.show && (
                 <div className="login-error">{backendErrors.message}</div>
@@ -153,7 +148,7 @@ const Login = () => {
                     type="submit"
                     className="mt-4 mb-2"
                   >
-                    Log-In
+                   
                   </Button>
                 </div>
                 <Col lg={5} md={6} sm={12}>
@@ -182,11 +177,11 @@ const Login = () => {
                 </Row>
               </Form>
             </div>
-          </Col>
-        </Row>
-      </Container>
+        </div>
+      </div>
+      </div>
     </React.Fragment>
   );
 };
 
-export default Login;
+export default Home;

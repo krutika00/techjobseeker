@@ -5,6 +5,7 @@ import classes from "./Navigation.module.css";
 import { Navbar, Container, Nav, Dropdown } from "react-bootstrap";
 import { useDispatch } from "react-redux";
 import jwtDecode from "jwt-decode";
+import About from "../About";
 
 const Navigation = () => {
   // const selectauthToken = (rootstate) => rootstate.authToken;
@@ -26,7 +27,7 @@ const Navigation = () => {
       fixed="top"
       variant="dark"
       expand="md"
-      bg="primary"
+      // bg="primary"
       className={classes.nav}
     >
       <Container fluid>
@@ -42,7 +43,7 @@ const Navigation = () => {
           <span className={classes.logo}>
             <i className="bi bi-search"></i>
           </span>
-          Job Hunt
+          Job Portal
         </NavLink>
         <Navbar.Toggle aria-controls="navbar-dark-example" />
         <Navbar.Collapse id="navbar-dark-example">
@@ -120,16 +121,11 @@ const Navigation = () => {
               >
                 Applied Jobs
               </NavLink>
-              {/* <NavLink
-                className={(navData) =>
-                  navData.isActive ? classes.active : ""
-                }
-                to="/ProviderReport"
-                onClick={(event) => event.preventDefault()}
-              >
-                Reports
-              </NavLink> */}
+            
+            <Link to="./contact">Contact</Link>
+             <Link to="./about">About</Link>
             </Nav>
+            
           )}
           <Nav>
             {/* <NavDropdown
