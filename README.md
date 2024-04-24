@@ -1,4 +1,4 @@
-# Job Portal Project - MERN Stack
+<!-- # Job Portal Project - MERN Stack
 
 Welcome to the Job Portal project! This application is designed to provide a platform for users to find and apply for job opportunities. It is built using the MERN (MongoDB, Express.js, React, Node.js) stack. Please keep in mind that this is the developer's first large-scale project, so the file structure might not be optimal.
 
@@ -75,4 +75,4 @@ The following enhancements are planned for future releases:
 Improved file structure
 Enhanced user authentication and authorization
 Additional features for employers and job seekers
-Thank you for checking out the Job Portal project! If you have any questions or feedback, please don't hesitate to reach out. Happy coding!
+Thank you for checking out the Job Portal project! If you have any questions or feedback, please don't hesitate to reach out. Happy coding! -->
